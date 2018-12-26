@@ -9,7 +9,7 @@
         {
             $msisdn = safe($_POST['msisdn']);
 
-            $info=mysqli_fetch_assoc(mysqli_query($db,"select `company`,`fullname` from `users2` where `phone1`='$msisdn' or `phone2`='$msisdn'"));
+            $info=mysqli_fetch_assoc(mysqli_query($db,"select `company`,`fullname` from `users` where `phone1`='$msisdn' or `phone2`='$msisdn'"));
 
             $response = json_encode(array("code"=>1, "name" => $info['fullname'], "company" => $info['company']));
         }
