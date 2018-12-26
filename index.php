@@ -53,7 +53,7 @@ require_once "config.php";
                 <p class="company">Company: <span></span></p>
             </div>
         </div>
-        <div style="font-size: 15px;float: right;line-height: 2;"><a style="color: blue;" target="_blank" href="https://gitlab.com/Loussen/lottery">https://gitlab.com/Loussen/lottery</a></div>
+        <div style="font-size: 15px;float: right;line-height: 2;"><a style="color: blue;" target="_blank" href="https://gitlab.com/Loussen/dsc-lottery/">https://gitlab.com/Loussen/dsc-lottery/</a></div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
