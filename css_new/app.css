@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One); */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+code {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.7) !important;
+    text-align: left;
+}
+
+.well {
+    padding: 5px 25px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+}
+
+.btn-group-justified {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a{
+    color: #ccd500;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #a9b119;
+}
+
+/*
+ * Airlines
+ */
+#plane {
+    width: 100%;
+    position: relative;
+    background: url("../cover.png") no-repeat bottom left;
+    background-size:cover;
+    height: 100vh;
+}
+
+#plane .content {
+    position: absolute;
+    top: 50%;
+    width: 800px;
+    left: calc(50% - 400px);
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+    display: block;
+    transform: translateY(-50%);
+}
+
+#plane .content{
+    font-family: 'Pathway Gothic One';
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 80px;
+}
+
+#planeMachine {
+    height: 85px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.buttons {
+    line-height: 1;
+    font-size:50px;
+}
+
+.buttons button {
+    display: inline-block;
+    font-size:18px;
+    padding:15px 25px !important;
+    border:0;
+    border-radius: 8px;
+    line-height: 1;
+    color:#fff;
+}
+
+.buttons button.start {
+    background:rgb(72, 158, 48);
+}
+
+.buttons button.stop {
+    background:#B8312F;
+    display: none;
+}
+
+.buttons button.restart {
+    background:#EB6B56;
+    display: none;
+}
+
+.buttons button.stop[disabled] {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.btn-group {
+    margin-top: 150px;
+    transform: translateX(-25px);
+}
+
+.btn-group .btn {
+    border: none;
+    background-color: rgb(209, 79, 119);
+}
+
+.btn-group .btn:hover, .btn-group .btn:focus {
+    background-color: rgb(180, 75, 119);
+}
+
+
+.result {
+    font-size:18px;
+    text-align: center;
+    line-height: 1;
+    display: none;
+    margin:5px 0;
+    padding:5px;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+    border-radius: 12px;
+}
+.result h2 {
+    border-bottom:1px solid #fff;
+    padding-bottom:15px;
+    margin-bottom:15px;
+    display: inline-block;
+}
