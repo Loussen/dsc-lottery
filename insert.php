@@ -1,4 +1,6 @@
 <?php
+
+exit();
 require_once "config.php";
 
 $connect = mysqli_connect("localhost", "root", "", "test");
@@ -29,7 +31,7 @@ if(isset($_POST["import"]))
                 $phone2 = mysqli_real_escape_string($db, $worksheet->getCellByColumnAndRow(6, $row)->getValue());
                 $email = mysqli_real_escape_string($db, $worksheet->getCellByColumnAndRow(7, $row)->getValue());
 
-                $query = "INSERT INTO users2(company, fullname, name, gender, surname, phone1, phone2, email) VALUES ('".$company."', '".$fullname."','".$name."','".$gender."','".$surname."','".$phone1."','".$phone2."','".$email."')";
+                $query = "INSERT INTO users(company, fullname, name, gender, surname, phone1, phone2, email) VALUES ('".$company."', '".$fullname."','".$name."','".$gender."','".$surname."','".$phone1."','".$phone2."','".$email."')";
 
                 mysqli_query($db, $query);
                 $output .= '<td>'.$company.'</td>';
@@ -38,6 +40,7 @@ if(isset($_POST["import"]))
                 $output .= '<td>'.$gender.'</td>';
                 $output .= '<td>'.$surname.'</td>';
                 $output .= '<td>'.$phone1.'</td>';
+                $output .= '<td>'.$phone2.'</td>';
                 $output .= '<td>'.$email.'</td>';
                 $output .= '</tr>';
             }

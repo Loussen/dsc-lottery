@@ -6,6 +6,8 @@
  * Time: 12:36 PM
  */
 
+exit();
+
 require_once "config.php";
 
 $file = fopen("result.txt","r");
