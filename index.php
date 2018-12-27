@@ -66,7 +66,7 @@ require_once "config.php";
     var sound = new Audio('ringtones/spinning.mp3');
     var ding = new Audio('ringtones/ding.wav');
     var machine = $('#planeMachine').slotMachine({
-        delay: 150,
+        delay: 300,
         // active: Math.floor(Math.random() * $('#planeMachine div').length),
         active: 0,
         spins: 0,
@@ -95,6 +95,7 @@ require_once "config.php";
             });
         }
     });
+
     sound.addEventListener('ended', function () {
         this.currentTime = 0;
         this.play();
