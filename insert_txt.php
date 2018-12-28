@@ -6,11 +6,11 @@
  * Time: 12:36 PM
  */
 
-exit();
+//exit();
 
 require_once "config.php";
 
-$file = fopen("result.txt","r");
+$file = fopen("cs_attempts.txt","r");
 
 while(!feof($file))
 {

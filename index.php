@@ -4,10 +4,9 @@ require_once "config.php";
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="best/css/app.css"/>
     <title>Lottery for New Year!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -66,7 +65,7 @@ require_once "config.php";
     var sound = new Audio('ringtones/spinning.mp3');
     var ding = new Audio('ringtones/ding.wav');
     var machine = $('#planeMachine').slotMachine({
-        delay: 300,
+        delay: 240,
         // active: Math.floor(Math.random() * $('#planeMachine div').length),
         active: 0,
         spins: 0,
@@ -111,7 +110,7 @@ require_once "config.php";
         $(".start").hide();
         $(".stop").show();
         sound.play();runSpin
-        machine.shuffle(9999999);
+        machine.shuffle(9999999999);
     }
 
     function restart() {
